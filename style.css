@@ -233,8 +233,10 @@ main {
 }
 
 .testimonials h2 {
-  font-size: 32px;
+  font-size: 2.2rem;
   margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+  color: #333;
 }
 
 .testimonial-container {
@@ -242,15 +244,18 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .testimonial-card {
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   padding: 25px 20px;
-  flex: 1 1 250px;
+  flex: 0 1 calc(33.333% - 20px);
   max-width: 300px;
+  font-family: Arial, sans-serif;
 }
 
 .testimonial-card .avatar {
