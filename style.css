@@ -198,11 +198,26 @@ main {
   margin-bottom: 40px;
 }
 
-.card-container {
+
+/* Slider for services */
+.service-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.service-slider .slide-track {
   display: flex;
-  flex-wrap: wrap;
+  width: calc(300px * 8);
+  animation: serviceScroll 20s linear infinite;
+}
+
+.service-slider .slide {
+  width: 300px;
+  display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  padding: 20px;
 }
 
 .service-card {
@@ -210,14 +225,20 @@ main {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 25px 20px;
-  flex: 1 1 250px;
-  max-width: 300px;
+  width: 100%;
 }
 
 .service-card i {
-  font-size: 48px;
+  font-size: 36px;
   color: #0072ff;
   margin-bottom: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #eef3ff;
 }
 
 .service-card h3 {
@@ -283,6 +304,15 @@ main {
   }
   100% {
     transform: translateX(calc(-200px * 3));
+  }
+}
+
+@keyframes serviceScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 4));
   }
 }
 
