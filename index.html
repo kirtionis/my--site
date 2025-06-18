@@ -32,15 +32,12 @@
 <main>
     <section class="home" id="home">
         <div class="glass-card">
-            <img src="DustCleaner_Logo_Vertical_Color1.jpg" alt="Λογότυπο" class="logo-in-section">
-            <div class="glass-text">
-                <h1>Καλώς ήρθατε στη Dust Cleaners</h1>
-                <p>Η πολυτέλεια ξεκινά από την καθαριότητα.
+            <h1>Καλώς ήρθατε στη Dust Cleaners</h1>
+            <p>Η πολυτέλεια ξεκινά από την καθαριότητα.
 Στη Dust Cleaner, προσφέρουμε εξειδικευμένες λύσεις καθαρισμού για επαγγελματικούς και βιομηχανικούς χώρους, με έμφαση στη λεπτομέρεια, τη διακριτικότητα και την απόλυτη συνέπεια.
 Η ομάδα μας, εξοπλισμένη με τεχνολογία αιχμής και τεχνογνωσία ετών, εξασφαλίζει ένα περιβάλλον άψογα καθαρό, υγιεινό και εκλεπτυσμένο.
 Εμπιστευθείτε τη Dust Cleaner — γιατί ο χώρος σας δεν αξίζει τίποτα λιγότερο από το καλύτερο.</p>
-                <a href="#services" class="main-button">Μάθε περισσότερα</a>
-            </div>
+            <a href="#services" class="main-button">Μάθε περισσότερα</a>
         </div>
     </section>
 
@@ -110,17 +107,10 @@
 <script>
     setTimeout(() => {
       const logo = document.querySelector('.logo');
-      const logoSection = document.querySelector('.logo-in-section');
-      const card = document.querySelector('.glass-card');
       logo.classList.add('fade-out');
 
       setTimeout(() => {
         document.body.classList.add('fixed-header');
-        logoSection.style.display = 'block';
-        card.classList.add('with-logo');
-        setTimeout(() => {
-          logoSection.classList.add('visible');
-        }, 10);
       }, 1600); // Δώσε χρόνο να γίνει το transition ΠΡΙΝ βάλεις το fixed-header
     }, 3000);
   </script>

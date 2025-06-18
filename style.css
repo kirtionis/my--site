@@ -140,10 +140,6 @@ main {
   animation: fadeInUp 1.2s ease forwards;
   transform: translateY(20px);
   opacity: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 @keyframes fadeInUp {
@@ -189,31 +185,6 @@ main {
   color: white;
 }
 
-.logo-in-section {
-  display: none;
-  height: 150px;
-  opacity: 0;
-  transition: opacity 0.8s ease;
-}
-
-.logo-in-section.visible {
-  opacity: 1;
-}
-
-.glass-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.glass-card.with-logo {
-  flex-direction: row;
-  text-align: left;
-}
-
-.glass-card.with-logo .glass-text {
-  margin-left: 20px;
-}
 
 /* Services Section */
 .services {
