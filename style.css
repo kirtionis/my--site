@@ -353,3 +353,15 @@ main {
     max-width: 100%;
   }
 }
+
+/* Fullscreen layout for all sections except the home section */
+.services,
+.clients,
+.testimonials,
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
