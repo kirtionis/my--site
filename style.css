@@ -199,33 +199,24 @@ main {
 }
 
 
-/* Slider for services */
-.service-slider {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.service-slider .slide-track {
+/* Grid layout for services */
+.service-grid {
   display: flex;
-  width: calc(300px * 8);
-  animation: serviceScroll 20s linear infinite;
-}
-
-.service-slider .slide {
-  width: 300px;
-  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .service-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 25px 20px;
-  width: 100%;
+  width: 260px;
 }
 
 .service-card i {
@@ -238,7 +229,7 @@ main {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: #eef3ff;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .service-card h3 {
@@ -307,14 +298,6 @@ main {
   }
 }
 
-@keyframes serviceScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-300px * 4));
-  }
-}
 
 /* Testimonials Section */
 .testimonials {
