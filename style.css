@@ -225,6 +225,62 @@ main {
   line-height: 1.5;
 }
 
+/* Clients Section */
+.clients {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.clients h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+}
+
+.client-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.client-slider .slide-track {
+  display: flex;
+  width: calc(200px * 6);
+  animation: scroll 20s linear infinite;
+}
+
+.client-slider .slide {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.client-slider img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: filter 0.3s, opacity 0.3s;
+}
+
+.client-slider img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 3));
+  }
+}
+
 /* Testimonials Section */
 .testimonials {
   padding: 60px 20px;
